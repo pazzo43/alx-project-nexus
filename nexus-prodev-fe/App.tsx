@@ -43,3 +43,9 @@ export default function App() {
 
 npm start
 
+git add .
+git commit -m "feat: configure Redux Toolkit and RTK Query"
+git commit -m "feat: implement products API integration"
+git commit -m "feat: display products with loading and error states"
+git push
+
