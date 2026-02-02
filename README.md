@@ -1,7 +1,7 @@
 # alx-project-nexus
 
 ## Project Overview
-Project Nexus is the capstone experience of the **ProDev Frontend Engineering** program. This repository serves as a comprehensive knowledge hub, documenting the technical evolution, major milestones, and architectural decisions made throughout the program. It consolidates learning from core technologies into a single reference guide for modern frontend development.
+A mobile application built with React Native (Expo) that implements a dynamic e-commerce product catalog consuming a real backend API.
 
 ## Major Learnings
 
@@ -37,6 +37,10 @@ This project thrives on the synergy between:
 * **Frontend Cohort:** For study sessions and UI/UX brainstorming.
 * **Backend Cohort:** Essential collaboration for consuming API endpoints and system integration.
 * **Platform:** Discussions held in the `#ProDevProjectNexus` Discord channel.
+
+git add README.md
+git commit -m "docs: add initial project README"
+git push
 
 ---
 *Created by pazzo43 as part of the ProDev Frontend Engineering Program (January 2026).*
