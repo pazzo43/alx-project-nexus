@@ -31,3 +31,6 @@ const api = axios.create({
 export default api;
 
 
+git init
+git add .
+git commit -m "feat: set up project structure with React and TypeScript"
