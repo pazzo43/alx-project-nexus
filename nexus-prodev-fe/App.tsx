@@ -29,4 +29,17 @@ export default function App() {
   );
 }
 
+import { Provider } from "react-redux";
+import { store } from "./src/store";
+import ProductListScreen from "./src/screens/ProductListScreen";
+
+export default function App() {
+  return (
+    <Provider store={store}>
+      <ProductListScreen />
+    </Provider>
+  );
+}
+
+npm start
 
