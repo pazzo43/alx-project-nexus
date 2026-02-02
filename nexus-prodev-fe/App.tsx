@@ -10,3 +10,6 @@ export default function App() {
 
 npm start
 
+git init
+git add .
+git commit -m "feat: initialize Expo project with TypeScript"
