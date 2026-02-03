@@ -131,3 +131,21 @@ export default function HomeScreen() {
 git add .
 git commit -m
 "feat: implement product filtering and sorting functionality"
+
+
+// app/(tabs)/index.tsx
+if (error) return <ErrorMessage message="Failed to fetch products" onRetry={refetch} />;
+
+return (
+  <FlatList
+    data={filteredItems}
+    ListEmptyComponent={<EmptyState message={`No items in ${category}`} />}
+    refreshControl={
+      <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+    }
+    // ...rest of the configuration
+  />
+);
+
+git add .
+git commit -m "style: enhance UI with Tailwind CSS, skeleton loaders, and error states"
