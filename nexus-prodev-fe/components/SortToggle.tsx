@@ -5,3 +5,8 @@
   }
 />
 
+
+git add .
+git commit -m "feat: add category filtering to product list"
+git commit -m "feat: implement price sorting using API params"
+git commit -m "refactor: connect filters to RTK Query"
