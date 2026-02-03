@@ -127,3 +127,7 @@ export default function HomeScreen() {
     </View>
   );
 }
+
+git add .
+git commit -m
+"feat: implement product filtering and sorting functionality"
