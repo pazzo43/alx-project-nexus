@@ -56,3 +56,16 @@ export const api = createApi({
 
 export const { useGetProductsQuery } = api;
 
+
+// src/services/api.ts
+getProducts: builder.query({
+  query: ({ page = 1, category, ordering }) => ({
+    url: "products/",
+    params: {
+      page,
+      category,
+      ordering, // "price" or "-price"
+    },
+  }),
+}),
+
