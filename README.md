@@ -1,16 +1,21 @@
-# alx-project-nexus
+# Nexus ProDev: Dynamic E-Commerce Catalog
 
 ## Project Overview
-A mobile application built with React Native (Expo) that implements a dynamic e-commerce product catalog consuming a real backend API.
+A high-performance mobile e-commerce discovery engine built with **React Native (Expo)**. This project demonstrates a production-ready frontend architecture focusing on scalability, performance, and user convenience.
 
 ## Major Learnings
 
-### Key Technologies
-* **Web Development:** Advanced application building using **Next.js** and **React**.
-* **Mobile Development:** Cross-platform mobile engineering with **React Native** and the **Expo Framework**.
-* **Progressive Web Apps (PWA):** Implementing service workers, web manifests, and offline-first capabilities.
-* **Styling:** Utility-first CSS using **TailwindCSS** for responsive and maintainable UIs.
+### Architecture & Tech Stack
+- **State Management:** Redux Toolkit (Slices & RTK Query for automated caching).
+- **Styling:** NativeWind (Tailwind CSS for Mobile).
+- **Navigation:** Expo Router (File-based routing).
+- **Performance:** Infinite scrolling, Skeleton loaders, and memoized components.
 
+### Design System Rules
+Configured via `tailwind.config.js` to ensure visual consistency across all components:
+- **Primary Color:** #2563eb (Nexus Blue)
+- **Border Radius:** 12px (Nexus Smooth)
+  
 ### Core Concepts
 * **System Design & Analysis:** Structuring scalable frontend architectures and component hierarchies.
 * **TypeScript:** Implementing strict type-safety to reduce runtime errors and improve developer experience.
@@ -18,12 +23,15 @@ A mobile application built with React Native (Expo) that implements a dynamic e-
 * **Performance Optimization:** Auditing and improving web vitals using **Google Lighthouse**.
 
 ## Challenges & Solutions
-
-### Challenge 1: Cross-Platform Compatibility
+### challenge 1
+- **Challenge :** Handling list performance for 100+ items. 
+- **Solution:** Implemented windowed rendering via `FlatList` with `onEndReached` pagination.
+  
+### Challenge 2: Cross-Platform Compatibility
 * **The Issue:** Ensuring UI consistency between React Native (Mobile) and Next.js (Web).
 * **The Solution:** Leveraged **Expo Router** and shared TypeScript interfaces to ensure a unified data flow and navigation structure across platforms.
 
-### Challenge 2: API State Management
+### Challenge 3: API State Management
 * **The Issue:** Handling complex loading and error states during Backend integration.
 * **The Solution:** Implemented robust error boundaries and used modern hooks to manage the lifecycle of asynchronous requests efficiently.
 
