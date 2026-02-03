@@ -34,3 +34,25 @@ export default api;
 git init
 git add .
 git commit -m "feat: set up project structure with React and TypeScript"
+
+
+// src/services/api.ts
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+
+export const api = createApi({
+  reducerPath: "api",
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://YOUR-BACKEND-URL/api/",
+  }),
+  endpoints: (builder) => ({
+    getProducts: builder.query({
+      query: ({ page = 1, category, ordering }) => ({
+        url: "products/",
+        params: { page, category, ordering },
+      }),
+    }),
+  }),
+});
+
+export const { useGetProductsQuery } = api;
+
