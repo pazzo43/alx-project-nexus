@@ -40,3 +40,25 @@ const productSlice = createSlice({
 
 export const { setProducts, filterByCategory, sortProducts } = productSlice.actions;
 export default productSlice.reducer;
+
+
+import React from 'react';
+import { ScrollView, TouchableOpacity, Text } from 'react-native';
+
+const categories = ['All', 'Electronics', 'Jewelry', "Men's Clothing", "Women's Clothing"];
+
+const CategoryBar = ({ activeCategory, onSelect }: { activeCategory: string, onSelect: (cat: string) => void }) => (
+  <ScrollView horizontal showsHorizontalScrollIndicator={false} className="py-4 bg-white">
+    {categories.map((cat) => (
+      <TouchableOpacity
+        key={cat}
+        onPress={() => onSelect(cat)}
+        className={`ml-4 px-5 py-2 rounded-full ${activeCategory === cat ? 'bg-blue-600' : 'bg-gray-100'}`}
+      >
+        <Text className={activeCategory === cat ? 'text-white font-bold' : 'text-gray-600'}>
+          {cat}
+        </Text>
+      </TouchableOpacity>
+    ))}
+  </ScrollView>
+);
