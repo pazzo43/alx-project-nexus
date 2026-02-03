@@ -51,3 +51,6 @@ export default function ProductListScreen() {
 }
 
 
+feat: set up Redux Toolkit store
+feat: add RTK Query API service for products
+feat: fetch and display products from backend API
