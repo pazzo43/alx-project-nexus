@@ -53,3 +53,31 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onPress }) => {
 };
 
 export default ProductCard;
+
+
+// Inside your HomeScreen.tsx
+const handleSort = (type: 'price-asc' | 'price-desc') => {
+  dispatch(sortProducts(type));
+};
+
+// UI Element
+<View className="flex-row justify-between p-4 bg-gray-50">
+  <Text className="font-bold text-gray-700">Products ({filteredItems.length})</Text>
+  <TouchableOpacity onPress={() => handleSort('price-asc')}>
+    <Text className="text-blue-600">Sort by Price ↑</Text>
+  </TouchableOpacity>
+</View>
+
+// Inside your HomeScreen.tsx
+if (isLoading) {
+  return (
+    <View className="flex-1 bg-gray-50 p-2">
+      <FlatList
+        data={[1, 2, 3, 4, 5, 6]} // Dummy array for skeletons
+        renderItem={() => <ProductSkeleton />}
+        numColumns={2}
+        keyExtractor={(item) => item.toString()}
+      />
+    </View>
+  );
+}
