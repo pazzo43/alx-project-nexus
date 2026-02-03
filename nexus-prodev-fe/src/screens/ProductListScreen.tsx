@@ -73,3 +73,15 @@ const handleSort = (type: 'price-asc' | 'price-desc') => {
 const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
 const [sortOrder, setSortOrder] = useState<"price" | "-price">("price");
 
+
+<FlatList
+  data={data?.results}
+  keyExtractor={(item) => item.id.toString()}
+  renderItem={({ item }) => (
+    <View>
+      <Text>{item.name}</Text>
+      <Text>${item.price}</Text>
+    </View>
+  )}
+/>
+
