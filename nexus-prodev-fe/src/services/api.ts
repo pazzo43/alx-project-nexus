@@ -69,3 +69,10 @@ getProducts: builder.query({
   }),
 }),
 
+
+const { data, isLoading } = useGetProductsQuery({
+  page: 1,
+  category: selectedCategory ?? undefined,
+  ordering: sortOrder,
+});
+
