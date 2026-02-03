@@ -83,3 +83,7 @@ if (isLoading) {
 }
 
 export default React.memo(ProductSkeleton);
+
+
+git add .
+git commit -m "style: enhance UI with skeleton loaders for better UX"
