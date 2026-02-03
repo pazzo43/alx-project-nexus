@@ -68,3 +68,8 @@ const handleSort = (type: 'price-asc' | 'price-desc') => {
     <Text className="text-blue-600">Sort by Price ↑</Text>
   </TouchableOpacity>
 </View>
+
+
+const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
+const [sortOrder, setSortOrder] = useState<"price" | "-price">("price");
+
