@@ -81,3 +81,5 @@ if (isLoading) {
     </View>
   );
 }
+
+export default React.memo(ProductSkeleton);
