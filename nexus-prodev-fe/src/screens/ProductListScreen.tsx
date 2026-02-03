@@ -90,3 +90,28 @@ git commit -m "feat: add category filtering to product list"
 git commit -m "feat: implement price sorting using API params"
 git commit -m "refactor: connect filters to RTK Query"
 
+
+src/screens/ProductListScreen.tsx
+
+const [page, setPage] = useState(1);
+const [products, setProducts] = useState<Product[]>([]);
+
+src/screens/ProductListScreen.tsx
+
+src/screens/ProductListScreen.tsx
+useEffect(() => {
+  ...
+}, [data]);
+
+src/screens/ProductListScreen.tsx
+const loadMore = () => { ... }
+
+src/screens/ProductListScreen.tsx
+
+src/screens/ProductListScreen.tsx
+useEffect(() => setPage(1), [selectedCategory, sortOrder]);
+
+feat: add pagination state to product list screen
+feat: implement infinite scrolling with FlatList
+perf: append paginated results efficiently
+fix: reset pagination when filters change
