@@ -5,11 +5,22 @@ A high-performance mobile e-commerce discovery engine built with **React Native 
 
 ## Major Learnings
 
+## Features
+- Product listing from API
+- Category filtering
+- Price sorting (asc/desc)
+- Pagination & infinite scrolling
+- Loading & error states
+- Responsive mobile UI
+- 
 ### Architecture & Tech Stack
 - **State Management:** Redux Toolkit (Slices & RTK Query for automated caching).
 - **Styling:** NativeWind (Tailwind CSS for Mobile).
 - **Navigation:** Expo Router (File-based routing).
 - **Performance:** Infinite scrolling, Skeleton loaders, and memoized components.
+
+## API Integration
+Uses backend endpoints provided by the ProDev Backend project.
 
 ### Design System Rules
 Configured via `tailwind.config.js` to ensure visual consistency across all components:
@@ -50,5 +61,7 @@ git add README.md
 git commit -m "docs: add initial project README"
 git push
 
----
+## Author
+Patrick Ndicunguye
+
 *Created by pazzo43 as part of the ProDev Frontend Engineering Program (January 2026).*
