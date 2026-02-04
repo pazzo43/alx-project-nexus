@@ -12,7 +12,7 @@ A high-performance mobile e-commerce discovery engine built with **React Native 
 - Pagination & infinite scrolling
 - Loading & error states
 - Responsive mobile UI
-- 
+
 ### Architecture & Tech Stack
 - **State Management:** Redux Toolkit (Slices & RTK Query for automated caching).
 - **Styling:** NativeWind (Tailwind CSS for Mobile).
